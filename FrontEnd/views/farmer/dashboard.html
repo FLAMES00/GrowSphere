@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://via.placeholder.com/1500'); /* Background image for the whole page */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: #fff;
+        }
+
+        /* Header Section */
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Card Styles */
+        .card {
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-size: cover; /* Ensure the image covers the card */
+            background-position: center; /* Position the image at the center */
+            background-repeat: no-repeat;
+            color: #2e2020; /* Text color inside the card */
+            margin: 20px 0;
+            height: 250px; /* Set a fixed height for the cards */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            position: relative; /* Needed for positioning the arrow */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        /* Arrow Button */
+        /* Arrow Button */
+.arrow-btn {
+    position: absolute;
+    bottom: 30px; /* Move the button a little higher */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d6efd;
+    color: white;
+    font-size: 2rem; /* Increase the font size of the arrow */
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow-btn:hover {
+    background-color: #0b5ed7; /* Darker shade on hover */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-icon">
+            <i class="bi bi-person"></i>
+        </div>
+        <h1>Farmer's Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <!-- Crop Prediction Card with Background Image -->
+        <div class="card" style="background-image: url('./field.webp'); background-size: cover;">
+            <div class="card-body">
+                Crop Prediction
+            </div>
+            <div class="arrow-btn">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <!-- Sell Crop Card with Background Image -->
+        <div class="card" style="background-image: url('https://via.placeholder.com/800x400'); background-size: cover;">
+            <div class="card-body">
+                Sell Crop
+            </div>
+            <div class="arrow-btn">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
